@@ -1,0 +1,63 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
+
+:root {
+    --primary: #4285f4;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.navbar-brand span {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.bg-gradient {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+}
+
+.card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgb(66 133 244 / 0.3) !important;
+}
+
+#video-feed {
+    filter: brightness(1.05);
+}
+
+#ar-overlay {
+    pointer-events: none;
+    mix-blend-mode: screen;
+}
+
+.mode-pill {
+    transition: all 0.2s;
+}
+
+.mode-pill.active {
+    background: #4285f4 !important;
+    color: white !important;
+    transform: scale(1.05);
+}
+
+.result-card {
+    transition: transform 0.3s ease;
+}
+
+.result-card:hover {
+    transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+    #camera .card-body {
+        height: 380px;
+    }
+    .display-1 {
+        font-size: 3rem;
+    }
+}
